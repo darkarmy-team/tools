@@ -1,0 +1,88 @@
+                                       html,
+                                       body {
+                                           width: 100%;
+                                           margin: 0 auto;
+                                           background-color: #1c1c1c;
+                                           font-family: "Quicksand", sans-serif;
+                                           overflow: hidden;
+                                       }
+                                       
+                                       .main {
+                                           position: absolute;
+                                           width: 100%;
+                                           height: 100%;
+                                           top: 50%;
+                                           left: 50%;
+                                           margin: 0 auto;
+                                           transform: translate(-50%, -50%);
+                                           background: rgba(0, 0, 0, 0.5);
+                                       }
+                                       
+                                       #content {
+                                           width: 100%;
+                                           max-width: 600px;
+                                           margin: 0 auto;
+                                           min-height: 24px;
+                                           height: 100%;
+                                           position: relative;
+                                           text-align: center;
+                                           top: 33%;
+                                       }
+                                       
+                                       .title {
+                                           color: white;
+                                           font-family: "Quicksand", sans-serif;
+                                           font-size: 4rem;
+                                           text-transform: uppercase;
+                                           padding-bottom: 0px;
+                                           margin-bottom: 0px;
+                                       }
+                                       
+                                       span {
+                                           font-size: 4rem;
+                                           cursor: pointer;
+                                       }
+                                       
+                                       span:hover {
+                                           -webkit-animation: MISSION-HOVER 1.5s infinite;
+                                           -moz-animation: MISSION-HOVER 1.5s infinite;
+                                           -o-animation: MISSION-HOVER 1.5s infinite;
+                                           animation: MISSION-HOVER 1.5s infinite;
+                                           animation-direction: alternate;
+                                           animation-timing-function: ease;
+                                       }
+                                       
+                                       @-webkit-keyframes MISSION-HOVER {
+                                           0%,
+                                           100% {
+                                               font-size: 4rem;
+                                               color: white;
+                                           }
+                                           50% {
+                                               color: #bffcff;
+                                               letter-spacing: 5px;
+                                               text-shadow: 0px 0px 30px rgba(191, 252, 255, 1);
+                                           }
+                                           span {
+                                               font-size: 4rem;
+                                               cursor: pointer;
+                                           }
+                                            :hover {
+                                               -webkit-animation: MISSION-HOVER 1.5s infinite;
+                                               -moz-animation: MISSION-HOVER 1.5s infinite;
+                                               -o-animation: MISSION-HOVER 1.5s infinite;
+                                               animation: MISSION-HOVER 1.5s infinite;
+                                               animation-direction: alternate;
+                                               animation-timing-function: ease;
+                                           }
+                                       }
+                                       
+                                       p {
+                                           color: #e6dbae;
+                                           font-family: "Quicksand", sans-serif;
+                                           font-size: 1.5rem;
+                                           margin: 0 auto;
+                                           padding: 0;
+                                           letter-spacing: 0.5rem;
+                                           text-transform: uppercase;
+                                       }
