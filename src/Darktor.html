@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DarkTor</title>
+    <link rel="icon" href="/img/Logo.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        var links = ["https://darkarmy.live/css/materialize.min.css", "https://darkarmy.live/css/styles.css"];
+        links.forEach(addLink)
+
+        function addLink(value) {
+            var link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = value;
+            document.getElementsByTagName('HEAD')[0].appendChild(link);
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container">
+        <div class="col s12 m12 l12" style="margin-left: 10px; margin-right: 10px;">
+            <div class="nav-wrap">
+                <a src="/img/Logo.png" href="/index.html" ,><img class="circle responsive-img glow nav-img" src="/img/Logo.png" alt="DarkArmy Logo"></a>
+                <div class="white-text text-glow fluid-text">The DarkArmy</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12 m12 l6 sub-social">
+                    <a href="https://github.com/D4RK-4RMY" target="_blank">
+                        <img src="/img/github.svg" alt="DarkArmy github" class="btn-floating grey darken-4 hoverable z-depth-3">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCOFaS6FYLXNeJol3KJQdwGA" target="_blank">
+                        <img src="/img/youtube.svg" alt="DarkArmy youtube" class="btn-floating grey darken-4 hoverable z-depth-3">
+                    </a>
+
+                    <a href="https://twitter.com/_d4rk4rmy_" target="_blank">
+                        <img src="/img/twitter.svg" alt="DarkArmy twitter" class="btn-floating grey darken-4 hoverable z-depth-3">
+                    </a>
+                    <a href="https://t.me/darkarmyofficial" target="_blank">
+                        <img src="/img/telegram.svg" alt="thewhiteh4t telegram" class="btn-floating grey darken-4 hoverable z-depth-3">
+                    </a>
+
+                </div>
+
+
+                <div class="col s12 m12 l6">
+                    <div class="go-right">
+                        <button class="btn-abt hoverable z-depth-3" onclick="window.open('https://discord.gg/EjP28JrK9b')">Discord</button>
+                        <!-- <button class="btn-abt hoverable z-depth-3" onclick="window.location.href='https://thewhiteh4t.github.io/about/'">whoami</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel grey darken-4 glow">
+                        <h1 class="cyan-text">DarkTor</h1>
+
+                        <div class="content white-text">
+                            <p>DarkTor is a Proxy Changer Tool</p>
+                        </div>
+
+                        <pre><code>
+ ·▄▄▄▄   ▄▄▄· ▄▄▄  ▄  •▄ ▄▄▄▄▄      ▄▄▄
+██▪  ██ ▐█ ▀█ ▀▄ █·█▌▄▌▪• ██ ▪      ▀▄ █·
+▐█· ▐█▌▄█▀▀█  ▐▀▀▄ ▐▀▀▄·  ▐█.▪ ▄█▀▄ ▐▀▀▄
+██. ██ ▐█ ▪▐▌▐█•█▌▐█.█▌   ▐█▌·▐█▌.▐▌▐█•█▌
+▀▀▀▀▀•  ▀  ▀ .▀ ▀· ▀  ▀   ▀▀▀  ▀█▄▀▪.▀ ▀
+    1.0.1 - By DARKARMY || https://darkarmy.live
+    
+    
+    
+    
+DarkTor usage:
+    
+-s --start Start DarkTor
+-r --switch Request new tor exit node
+-x --stop Stop DarkTor
+-h --help For Help and Exit
+-u --update check for update  </code></pre>
+
+                        <h2 class="cyan-text">Installation Guide</h2>
+
+                        <div class="content white-text">
+                            <p>Build and install from source
+                            </p>
+                        </div>
+
+                        <pre><code>1.  git clone https://github.com/D4RK-4RMY/DarkTor.git
+2.  cd DarkTor
+3.  chmod +x build.sh
+4.  ./build.sh </code></pre>
+                        <h2 class="cyan-text">Usage</h2>
+
+                        <div class="content white-text">
+                            <p>How To Use Darktor v1.0.1
+                            </p>
+                        </div>
+
+                        <pre><code>1.  -s --start Start DarkTor
+2.  -r --switch Request new tor exit node
+3.  -x --stop Stop DarkTor
+4.  -h --help Print this help and exit 
+5.  -u --update Checks for updates  </code></pre>
+                        <div>
+                            <h2 class="cyan-text">Development By : <br>
+                            </h2>
+                            <div class="content white-text">
+                                <p>
+                                    Developer / Author:
+                                    <a href="https://github.com/D4RK-4RMY" target="_blank">DarkArmy</a>
+                                </p>
+
+                            </div>
+
+                            <script>
+                                var flag = false;
+
+                                function switcher() {
+                                    if (Boolean(flag) == true) {
+                                        invisible()
+                                    } else {
+                                        Visible()
+                                    }
+                                }
+
+                                function Visible() {
+                                    flag = true;
+                                    var def = document.getElementsByClassName('sub-action-btn');
+                                    for (var i = 0; i < def.length; i++) {
+                                        def[i].className += ' grow';
+                                    }
+                                }
+
+                                function invisible() {
+                                    flag = false;
+                                    var def = document.getElementsByClassName('sub-action-btn');
+                                    for (var i = 0; i < def.length; i++) {
+                                        def[i].classList.remove('grow');
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer glow center dark-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <ul class="pagination">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+
+            <div class="container">
+                <a href="https://github.com/D4RK-4RMY">D4RK4RMY</a><br> init : March 22 2022
+            </div>
+        </div>
+    </footer>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/lazysizes.js"></script>
+    <script src="/js/googlemanezer.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-114300490-1');
+    </script>
+</body>
+
+</html>
